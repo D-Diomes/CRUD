@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(202, 211, 218);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        display: grid;
+        grid-template-columns: 50px 1fr auto;
+        grid-template-areas: 
+        "side searchbar login";
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        background-color: rgb(137, 174, 235);
+        color: rgb(46, 95, 144);
+        padding: 8px 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #icon {
+        grid-area: side;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-left: 2px;
+        width: 36px;
+        height: 36px;
+    }
+
+    input {
+        grid-area: searchbar;
+        width: 80%;
+        box-sizing: border-box;
+        border: 2px solid #838383;
+        border-radius: 50px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('magnifying_glass.png');
+        background-position: 13px 8px; 
+        background-size: 24px;
+        background-repeat: no-repeat;
+        padding: 12px 15px 12px 40px;
+    }
+
+    .login-button {
+    grid-area: login;
+    background-color: #2e5f90;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.login-button:hover {
+    background-color: #244d76;
+}
+
+
+    .login-button:hover {
+        background-color: #244d76;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 220px;
+        width: 180px;
+        border-radius: 25px;
+        background: rgb(218, 218, 218);
+        border-style: solid;
+        border-color: #8d8d8d;
+        
+        flex-shrink: 0;
+        color: #8d8d8d;
+        font-size: 45px;
+    }
+
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        background-color: rgb(58, 58, 58);
+        color: rgb(255, 255, 255);
+        border-radius: 10%;
+        padding: 15px 17px;
+        justify-content: center;
+    }
+
+    a.footer {
+        text-decoration: none;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="start"></div>
+
+    <div class="header"> 
+    <img id="icon" src="test.png"> 
+    <input type="text" name="search" placeholder="Search...">
+    <a href="login.html" class="login-button">Login</a>
+</div>
+
+    <div id="boxes">
+        <div class="container">+</div>
+	<div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+        <div class="container">+</div>
+    </div>
+
+    <a href="#start" class="footer"><b>^</b></a>
+</body>
